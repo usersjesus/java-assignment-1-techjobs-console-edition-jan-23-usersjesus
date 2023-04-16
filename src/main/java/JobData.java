@@ -79,7 +79,7 @@ public class JobData {
 
             String aValue = row.get(column);
 
-            if (aValue.contains(value)) {
+            if (aValue.toUpperCase().contains(value.toUpperCase())) {
                 jobs.add(row);
             }
         }
